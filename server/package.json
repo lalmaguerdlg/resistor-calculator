@@ -4,6 +4,7 @@
   "main": "dist/server.js",
   "license": "MIT",
   "scripts": {
+    "prepare": "cp .env.example .env",
     "dev": "nodemon --config ./nodemon.json src/server.ts",
     "build": "tsc -p .",
     "start": "node dist/server.js",
