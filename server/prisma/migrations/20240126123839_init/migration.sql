@@ -4,7 +4,7 @@ CREATE TABLE "Band" (
     "color" TEXT NOT NULL,
     "value" INTEGER,
     "multiplierExp" INTEGER,
-    "tolerance" INTEGER,
+    "tolerance" DOUBLE PRECISION,
 
     CONSTRAINT "Band_pkey" PRIMARY KEY ("id")
 );

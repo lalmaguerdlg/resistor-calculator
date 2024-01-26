@@ -5,6 +5,24 @@ async function main() {
   await prisma.band.createMany({
     data: [
       {
+        color: "pink",
+        value: null,
+        multiplierExp: -3,
+        tolerance: null,
+      },
+      {
+        color: "silver",
+        value: null,
+        multiplierExp: -2,
+        tolerance: 10,
+      },
+      {
+        color: "gold",
+        value: null,
+        multiplierExp: -1,
+        tolerance: 5,
+      },
+      {
         color: "black",
         value: 0,
         multiplierExp: 0,
@@ -53,7 +71,7 @@ async function main() {
         tolerance: 0.1,
       },
       {
-        color: "grey",
+        color: "gray",
         value: 8,
         multiplierExp: 8,
         tolerance: 0.01,
@@ -63,24 +81,6 @@ async function main() {
         value: 9,
         multiplierExp: 9,
         tolerance: null,
-      },
-      {
-        color: "pink",
-        value: null,
-        multiplierExp: -3,
-        tolerance: null,
-      },
-      {
-        color: "silver",
-        value: null,
-        multiplierExp: -2,
-        tolerance: 10,
-      },
-      {
-        color: "gold",
-        value: null,
-        multiplierExp: -1,
-        tolerance: 5,
       },
     ],
     skipDuplicates: true,

@@ -15,5 +15,5 @@ model Band {
   color String  @unique
   value Int?
   multiplierExp Int?
-  tolerance Int?
+  tolerance Float?
 }
