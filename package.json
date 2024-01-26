@@ -13,7 +13,9 @@
     "dev": "concurrently \"npm run dev --prefix ./server \" \"npm run dev --prefix ./web \"",
     "db:migrate": "cd server && npx prisma migrate deploy",
     "db:seed": "cd server && npx prisma db seed",
-    "build": "npm run build --workspaces"
+    "build": "npm run build --workspaces",
+    "start:server": "npm run start --prefix ./server",
+    "start:web": "npm run preview --prefix ./web"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",

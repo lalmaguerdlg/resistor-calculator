@@ -46,8 +46,26 @@ Run database seeders
 yarn db:seed
 ```
 
-#### 5. Run backend and frontend at the same time
+#### 5. Run backend and frontend at the same time for development
 
 ```
 yarn dev
+```
+
+#### 6. For a production build use:
+
+```
+yarn build
+```
+
+Now you will need 2 more terminals to run the web an server separately
+
+```
+yarn start:web
+```
+
+and
+
+```
+yarn start:server
 ```
