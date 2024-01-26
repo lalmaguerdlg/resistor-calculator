@@ -30,8 +30,13 @@ docker-compose up
 
 #### 4. Run database migrations
 
-Make sure to rename `.env.example` to `.env` before running the migrations so that prisma can use the right connection string.
 
+Run the following command to copy `.env.example` to `.env`
+```
+yarn env
+```
+
+Run the database migrations
 ```
 yarn db:migrate
 ```

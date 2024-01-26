@@ -4,11 +4,11 @@
   "main": "dist/server.js",
   "license": "MIT",
   "scripts": {
-    "prepare": "cp .env.example .env",
     "dev": "nodemon --config ./nodemon.json src/server.ts",
     "build": "tsc -p .",
     "start": "node dist/server.js",
-    "prisma": "prisma"
+    "prisma": "prisma",
+    "env": "cp .env.example .env"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
