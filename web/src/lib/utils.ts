@@ -9,7 +9,6 @@ export function cn(...inputs: ClassValue[]) {
 export function formatMultiplierExp(multiplierExp: number) {
   const ohmSymbol = getOhmSymbolByExp(multiplierExp);
   const exp = multiplierExp >= 0 ? multiplierExp % 3 : multiplierExp;
-  console.log({ exp, multiplierExp, ohmSymbol })
   return `x${Math.pow(10, exp)} ${ohmSymbol}`;
 }
 

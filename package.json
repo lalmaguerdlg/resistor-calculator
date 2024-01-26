@@ -9,10 +9,12 @@
     "web"
   ],
   "scripts": {
-    "dev": "npm run dev",
+    "dev": "concurrently \"npm run dev --prefix ./server \" \"npm run dev --prefix ./web \"",
+    "db:migrate": "cd server && npx prisma migrate deploy",
     "build": "npm run build --workspaces"
   },
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "nodemon": "^3.0.3",
     "typescript": "^5.3.3"
   }
