@@ -9,6 +9,7 @@
     "web"
   ],
   "scripts": {
+    "prepare": "npm run prepare --workspaces",
     "dev": "concurrently \"npm run dev --prefix ./server \" \"npm run dev --prefix ./web \"",
     "db:migrate": "cd server && npx prisma migrate deploy",
     "build": "npm run build --workspaces"
