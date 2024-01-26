@@ -12,6 +12,7 @@
     "env": "npm run env --prefix ./server",
     "dev": "concurrently \"npm run dev --prefix ./server \" \"npm run dev --prefix ./web \"",
     "db:migrate": "cd server && npx prisma migrate deploy",
+    "db:seed": "cd server && npx prisma db seed",
     "build": "npm run build --workspaces"
   },
   "devDependencies": {

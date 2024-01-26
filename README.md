@@ -28,7 +28,7 @@ yarn install
 docker-compose up
 ```
 
-#### 4. Run database migrations
+#### 4. Run database migrations and seeders
 
 
 Run the following command to copy `.env.example` to `.env`
@@ -39,6 +39,11 @@ yarn env
 Run the database migrations
 ```
 yarn db:migrate
+```
+
+Run database seeders
+```
+yarn db:seed
 ```
 
 #### 5. Run backend and frontend at the same time
