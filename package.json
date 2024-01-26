@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "resistor-calculator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "dev": "npm run dev",
+    "build": "npm run build --workspaces"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "typescript": "^5.3.3"
+  }
+}
